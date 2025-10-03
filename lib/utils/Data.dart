@@ -131,54 +131,50 @@ List<Categories> categoriesList = [
     image: 'assets/earing.jpg',
     name: 'Earings',
     color: const Color.fromARGB(255, 66, 114, 76),
-
   ),
 ];
-
 
 class Cart {
   final String image;
   final String name;
   final Color color; // new field
+  final int quantity;
+  final String price;
+  final String desc;
 
-  Cart({required this.image, required this.name, required this.color});
+  Cart({
+    required this.image,
+    required this.name,
+    required this.color,
+    required this.quantity,
+    required this.price,
+    required this.desc,
+  });
 }
 
 List<Cart> CartList = [
   Cart(
-    image: 'assets/diamondRing1.jpg',
+    image: 'assets/diamondRing.png',
     name: 'Rings',
-    color: const Color.fromARGB(255, 66, 114, 76),
+    color: const Color.fromARGB(255, 234, 234, 234),
+    quantity: 1,
+    price: '250.00',
+    desc: 'ring , Diamond',
   ),
   Cart(
-    image: 'assets/necklace.jpg',
-    name: 'Necklace',
-    color: const Color.fromARGB(255, 87, 83, 83),
+    image: 'assets/CrystalFlowerBrooch.png',
+    name: 'Brooch',
+    color: const Color.fromARGB(255, 234, 234, 234),
+    quantity: 1,
+    price: '100.00',
+    desc: 'Brooch, blue',
   ),
   Cart(
-    image: 'assets/bracelet.jpg',
-    name: 'Bracelet',
-    color: const Color.fromARGB(255, 168, 158, 169),
-  ),
-  Cart(
-    image: 'assets/earing.jpg',
-    name: 'Earings',
-    color: const Color.fromARGB(255, 176, 176, 176),
-  ),
-  Cart(
-    image: 'assets/watch.jpg',
-    name: 'Watches',
-    color: const Color.fromARGB(255, 83, 83, 83),
-  ),
-  Cart(
-    image: 'assets/bracelet.jpg',
-    name: 'Bracelet',
-    color: const Color.fromARGB(222, 58, 75, 120),
-  ),
-  Cart(
-    image: 'assets/earing.jpg',
-    name: 'Earings',
-    color: const Color.fromARGB(255, 66, 114, 76),
-
+    image: 'assets/emerald-earing.png',
+    name: 'Earing',
+    color: const Color.fromARGB(255, 234, 234, 234),
+    quantity: 1,
+    price: '50.00',
+    desc: 'Earing, Emerald Earing',
   ),
 ];

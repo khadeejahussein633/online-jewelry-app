@@ -132,7 +132,6 @@ class HomeTab extends StatelessWidget {
                   itemCount: categoriesList.length,
                   itemBuilder: (BuildContext context, int index) {
                     return Container(
-                      width: 60,
                       margin: const EdgeInsets.symmetric(horizontal: 8),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
