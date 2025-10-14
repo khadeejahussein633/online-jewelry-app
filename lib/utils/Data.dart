@@ -178,3 +178,72 @@ List<Cart> CartList = [
     desc: 'Earing, Emerald Earing',
   ),
 ];
+
+class Favorite {
+  final String image;
+  final String name;
+  final Color color; // new field
+  final int quantity;
+  final String price;
+  final String desc;
+
+  Favorite({
+    required this.image,
+    required this.name,
+    required this.color,
+    required this.quantity,
+    required this.price,
+    required this.desc,
+  });
+}
+
+List<Favorite> favoriteList = [
+  Favorite(
+    image: 'assets/diamondRing.png',
+    name: 'Rings',
+    color: const Color.fromARGB(255, 234, 234, 234),
+    quantity: 1,
+    price: '250.00',
+    desc: 'ring , Diamond',
+  ),
+  Favorite(
+    image: 'assets/CrystalFlowerBrooch.png',
+    name: 'Brooch',
+    color: const Color.fromARGB(255, 234, 234, 234),
+    quantity: 1,
+    price: '100.00',
+    desc: 'Brooch, blue',
+  ),
+  Favorite(
+    image: 'assets/emerald-earing.png',
+    name: 'Earing',
+    color: const Color.fromARGB(255, 234, 234, 234),
+    quantity: 1,
+    price: '50.00',
+    desc: 'Earing, Emerald Earing',
+  ),
+  Favorite(
+    image: 'assets/necklace.png',
+    name: 'necklace',
+    color: const Color.fromARGB(255, 234, 234, 234),
+    quantity: 1,
+    price: '50.00',
+    desc: 'necklace, Emerald necklace',
+  ),
+  Favorite(
+    image: 'assets/Gold-bangles.png',
+    name: 'Gold-bangles',
+    color: const Color.fromARGB(255, 234, 234, 234),
+    quantity: 1,
+    price: '50.00',
+    desc: 'Gold-bangles, Gold',
+  ),
+  Favorite(
+    image: 'assets/men-bracelet.png',
+    name: 'bracelet',
+    color: const Color.fromARGB(255, 234, 234, 234),
+    quantity: 1,
+    price: '50.00',
+    desc: 'bracelet, men bracelet',
+  ),
+];
