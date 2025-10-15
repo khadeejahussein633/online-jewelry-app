@@ -15,7 +15,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   int selectedIndex = 0;
 
-  List<Widget> screens = [HomeTab(), FaviriteTab(), CartTab(), ProfileTab(), 
+  List<Widget> screens = [HomeTab(), FavoriteTab(), CartTab(), ProfileTab(), 
   
   // CategoriesTab()
   ];
