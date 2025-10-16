@@ -81,7 +81,7 @@ export const deleteProduct = async (req, res) => {
     res.status(500).json({ error: error.message });
   }
 };
-=======
+
 export  const getAllProducts= async (req,res)=>{
     try {
  const products =await Products.find()
@@ -92,4 +92,3 @@ export  const getAllProducts= async (req,res)=>{
     }
    
 } 
->>>>>>> 658653c49f4b2f5ad49abb3750bc974e758dd7bc

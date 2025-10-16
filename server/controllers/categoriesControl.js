@@ -36,19 +36,18 @@ export const updatedCategories = async (req, res) => {
     const {id } = req.params
     const { image, name, Color  } = req.body;
 
-    const product = await Product.findById(id);
+    const categories = await Categories.findById(id);
 
-    if (!product) {
+    if (!categories) {
       return res.status(404).json({ 
         success: false,
         data: null,
-        message: "product not found" });
+        message: "Categories not found" });
     }
 
-    product.image = image;
-    product.name = name;
-    product.price = price;
-    product.image = image;
+    categories.image = image;
+    categories.name = name;
+    categories.Color = Color;
 
   
     const updatedProduct = await product.save();
@@ -56,7 +55,35 @@ export const updatedCategories = async (req, res) => {
     res.status(200).json({
         success: true,
         data: updatedProduct,
-        message: "Product updated successfully"
+        message: "Categories updated successfully"
+    });
+
+    
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+
+
+
+export const deleteCategeries = async (req, res) => {
+  try {
+  
+
+    const categories = await Categories.findByIdAndDelete(req.params.id);
+
+    if (!categories) {
+      return res.status(404).json({ 
+        success: false,
+        data: null,
+        message: "Categories not found" });
+    }
+
+
+    res.status(200).json({
+        success: true,
+        data: null,
+        message: "Categories deleted successfully"
     });
 
     
